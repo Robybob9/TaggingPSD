@@ -1,4 +1,4 @@
-package app.src.main.java.com.example.robin.taggingpsd.Model;
+package com.example.robin.taggingpsd.Model;
 
 public class Ploeg {
   //test
