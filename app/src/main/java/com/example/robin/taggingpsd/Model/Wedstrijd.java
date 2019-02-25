@@ -6,4 +6,5 @@ public class Wedstrijd {
     private String ruststand;
     private String eindstand;
 
+
 }
