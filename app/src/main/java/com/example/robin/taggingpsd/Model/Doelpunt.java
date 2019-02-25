@@ -1,6 +1,6 @@
 package com.example.robin.taggingpsd.Model;
 
-public class Doelpunt extends Actie{
+public class Doelpunt implements Actie{
     private Speler speler;
     private int minuut;
     private String soort;
@@ -9,5 +9,10 @@ public class Doelpunt extends Actie{
         this.speler = speler;
         this.minuut = minuut;
         this.soort = soort;
+    }
+
+    @Override
+    public void takeAction() {
+
     }
 }

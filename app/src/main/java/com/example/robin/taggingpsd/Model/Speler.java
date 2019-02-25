@@ -13,5 +13,12 @@ public class Speler {
     private String nationaliteit;
     private String positie;
 
+    private Actie actie;
+
+    public void doAction(){
+
+        actie.takeAction();
+    }
+
 }
 

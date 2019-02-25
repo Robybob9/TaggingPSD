@@ -1,4 +1,10 @@
 package com.example.robin.taggingpsd.Model;
 
-public class Actie {
+public abstract interface Actie {
+
+
+  void takeAction();
+
+
+
 }
