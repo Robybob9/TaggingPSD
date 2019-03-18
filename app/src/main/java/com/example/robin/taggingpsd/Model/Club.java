@@ -9,6 +9,12 @@ public class Club{
     private int id;
     private List<Team> teams;
 
+    public Club(List<Team> teams, String naam, int stamnummer){
+        this.teams = teams;
+        this.naam = naam;
+        this.stamnummer = stamnummer;
+    }
+
     public String getNaam() {
         return naam;
     }
