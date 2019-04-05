@@ -8,12 +8,23 @@ public class Speler {
     private Club club;
     private Date geboortedatum;
     private int id;
-    private Team team;
+    private int team;
     private int rugnummer;
-    private String nationaliteit;
+    private int nationaliteit;
     private String positie;
 
     private Actie actie;
+
+    public Speler(String naam, String voornaam, Date geboortedatum, int team, int nationaliteit){
+        this.naam = naam;
+        this.voornaam = voornaam;
+        this.geboortedatum = geboortedatum;
+        this.team = team;
+        this.nationaliteit = nationaliteit;
+    }
+    public int getTeam(){
+        return team;
+    }
 
     public void doAction(){
 

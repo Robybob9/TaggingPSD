@@ -1,17 +1,22 @@
 package com.example.robin.taggingpsd.Model;
 
+import java.util.Date;
 import java.util.List;
 
 public class Wedstrijd {
-    private Team thuisteam;
-    private Team uitteam;
+    private String thuisclub;
+    private String uitclub;
+    private Date datum;
+    private int team;
     private String ruststand;
     private String eindstand;
     private List<Actie> acties;
 
-    public Wedstrijd(Team thuisteam, Team uitteam){
-        this.thuisteam = thuisteam;
-        this.uitteam = uitteam;
+    public Wedstrijd(String thuisclub, String uitclub, int team, Date datum){
+        this.thuisclub = thuisclub;
+        this.uitclub = uitclub;
+        this.team = team;
+        this.datum = datum;
     }
 
 }

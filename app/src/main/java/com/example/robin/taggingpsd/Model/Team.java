@@ -1,26 +1,25 @@
 package com.example.robin.taggingpsd.Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
-    private String clubnaam;
+
     private int id;
     private List<Wedstrijd> wedstrijden;
     private List<Speler> spelers;
     private String typePloeg;
+    private String geslacht;
 
 
-    public Team(String clubnaam, int id, List<Wedstrijd> wedstrijden,List<Speler> spelers, String typePloeg){
-        this.clubnaam = clubnaam;
+    public Team(int id, String typePloeg, String geslacht){
+        this.geslacht = geslacht;
         this.id = id;
-        this.wedstrijden = wedstrijden;
-        this.spelers = spelers;
+        this.wedstrijden = new ArrayList<>();
+        this.spelers = new ArrayList<>();
         this.typePloeg = typePloeg;
     }
 
-    public String getClubnaam() {
-        return clubnaam;
-    }
 
     public int getId() {
         return id;
@@ -38,7 +37,7 @@ public class Team {
         return typePloeg;
     }
 
-    private void addSpeler(Speler speler){
+    public void addSpeler(Speler speler){
         spelers.add(speler);
     }
 
