@@ -9,9 +9,6 @@ public class DomeinController {
         this.club = club;
     }
 
-    public void takeAction(int id){
-        club.getSpeler(id); //.takeAction();
-    }
 
 
 }
