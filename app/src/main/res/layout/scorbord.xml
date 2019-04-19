@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -35,8 +36,8 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button11"
-                android:layout_width="0dp"
+                android:id="@+id/startmatch"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
@@ -45,21 +46,18 @@
                 android:cursorVisible="true"
                 android:text="START MATCH"
                 android:textColor="@color/yellow"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:layout_height="wrap_content" />
 
-            <EditText
-                android:id="@+id/editText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/klok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_weight="2"
-                android:clickable="false"
-                android:ems="10"
-                android:gravity="center"
-                android:inputType="time"
-                android:textColor="@color/yellow"
-                android:textSize="24sp"
-                tools:text="@tools:sample/date/hhmmss" />
+                android:layout_weight="1"
+                android:text="00:00"
+                android:textAllCaps="false" />
+
         </TableRow>
 
         <TableRow
