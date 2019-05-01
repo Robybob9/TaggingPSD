@@ -16,7 +16,7 @@
         android:autoSizeTextType="uniform"
         android:background="@color/grey"
         android:gravity="center"
-        android:text="SELECTEER PLOEG"
+        android:text="SELECTEER WEDSTRIJD"
         android:textColor="@color/yellow"
         android:textStyle="bold|italic"
         android:typeface="monospace" />

@@ -12,11 +12,21 @@ public class Wedstrijd {
     private String eindstand;
     private List<Actie> acties;
 
-    public Wedstrijd(String thuisclub, String uitclub, int team, Date datum){
+    public Wedstrijd(String thuisclub, String uitclub){
         this.thuisclub = thuisclub;
         this.uitclub = uitclub;
-        this.team = team;
-        this.datum = datum;
+
     }
 
+    public String getThuisclub() {
+        return thuisclub;
+    }
+
+    public String getUitclub() {
+        return uitclub;
+    }
+
+    public void addActie(Actie a){
+        acties.add(a);
+    }
 }

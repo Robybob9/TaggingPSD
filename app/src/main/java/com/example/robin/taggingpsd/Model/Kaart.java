@@ -2,10 +2,10 @@ package com.example.robin.taggingpsd.Model;
 
 public class Kaart implements Actie{
 
-    private String speler;
+    private Speler speler;
     private int minuut;
     private String soort;
-    public Kaart(String speler, int minuut, String soort){
+    public Kaart(Speler speler, int minuut, String soort){
         this.speler = speler;
         this.minuut = minuut;
         this.soort = soort;
