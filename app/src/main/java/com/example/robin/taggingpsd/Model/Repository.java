@@ -22,8 +22,12 @@ public class Repository {
         return teams;
     }
     @TargetApi(26)
-    public List<Wedstrijd> haalWedstrijdenOp(String teamnaam){
-        List<Wedstrijd> wedstrijden = Arrays.asList(new Wedstrijd("Fc Galmaarden","KRC Genk"),new Wedstrijd("Club Brugge","Fc Galmaarden"),new Wedstrijd("Fc Galmaarden","Afc Tubize"),new Wedstrijd("KRC Genk","Fc Galmaarden"),new Wedstrijd("Fc Galmaarden","Club brugge"),new Wedstrijd("AFC Tubize","FC Galmaarden"));
+    public List<Wedstrijd> haalWedstrijdenOp(String teamnaam,String soort){
+        List<Wedstrijd> wedstrijden = Arrays.asList(new Wedstrijd("Fc Galmaarden","KRC Genk","u21"),new Wedstrijd("Club Brugge","Fc Galmaarden","u21"),new Wedstrijd("Fc Galmaarden","Afc Tubize","u21"),new Wedstrijd("KRC Genk","Fc Galmaarden","u21"),new Wedstrijd("Fc Galmaarden","Club brugge","u21"),new Wedstrijd("AFC Tubize","FC Galmaarden","u21"));
         return wedstrijden;
+    }
+    public List<Speler> haalSpelersOp(String teamnaam,String category){
+        List<Speler> FCGalmaarden = Arrays.asList();
+        return null;
     }
 }

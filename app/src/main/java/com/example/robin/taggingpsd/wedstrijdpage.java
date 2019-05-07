@@ -27,7 +27,7 @@ public class wedstrijdpage extends Activity {
         rep = new Repository();
         linlay = findViewById(R.id.linlay2);
         buttons = new ArrayList<>();
-        wedstrijden = rep.haalWedstrijdenOp(getIntent().getStringExtra("teamnaam"));
+        wedstrijden = rep.haalWedstrijdenOp(getIntent().getStringExtra("teamnaam"),"u21");
         for (Wedstrijd w : wedstrijden) {
             Button b = new Button(this);
             buttons.add(b);

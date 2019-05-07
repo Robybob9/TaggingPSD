@@ -12,6 +12,7 @@ import com.example.robin.taggingpsd.Model.Actie;
 import com.example.robin.taggingpsd.Model.Doelpunt;
 import com.example.robin.taggingpsd.Model.Kaart;
 import com.example.robin.taggingpsd.Model.Penalty;
+import com.example.robin.taggingpsd.Model.Repository;
 import com.example.robin.taggingpsd.Model.Speler;
 import com.example.robin.taggingpsd.Model.Team;
 import com.example.robin.taggingpsd.Model.Timer;
@@ -37,8 +38,10 @@ public class Scorebord extends Activity {
     private Button vrijeTrap;
     private Button penalty;
     private TextView wedstrijdteams;
+    private List<Speler> thuisSpelers;
+    private List<Speler> uitSpelers;
     private Wedstrijd wedstrijd;
-
+    private Repository rep;
     private MytimerTask mytimerTask;
 
 
@@ -54,7 +57,10 @@ public class Scorebord extends Activity {
         vrijeTrap = findViewById(R.id.vrijeTrap);
         penalty = findViewById(R.id.penalty);
         wedstrijdteams = findViewById(R.id.wedstrijd);
+        rep = new Repository();
+
         wedstrijd = (Wedstrijd) getIntent().getSerializableExtra("wedstrijd");
+        thuisSpelers = rep.haalSpelersOp(wedstrijd.getThuisclub(),wedstrijd.getCategory());
 
         Gele.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
